@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "../../AppData/Roaming/Code/User/workspaceStorage/e18df4a418183b50b0d8f2393c3665cc/ms-dotnettools.csdevkit/ContainerAppTutorial.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "../../AppData/Roaming/Code/User/workspaceStorage/e18df4a418183b50b0d8f2393c3665cc/ms-dotnettools.csdevkit/ContainerAppTutorial.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/ContainerAppTutorial.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
